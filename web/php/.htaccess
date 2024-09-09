@@ -1,0 +1,7 @@
+#Bloquear los accesos a varias extensiones
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+ErrorDocument 403 /pages/errors/403.html

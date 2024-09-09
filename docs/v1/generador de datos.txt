@@ -1,0 +1,196 @@
+Participantes
+	php
+		- multicodecl - https://github.com/multicodecl
+		- Hur0nZ - https://github.com/Hur0nZ
+		- adoocs - https://github.com/adoocs
+		- arkeber-23 - https://github.com/arkeber-23
+		- DamianNeitor - https://github.com/DamianNeitor
+	
+	docs
+		- multicodecl - https://github.com/multicodecl
+		- Hur0nZ - https://github.com/Hur0nZ
+		- adoocs - https://github.com/adoocs
+		- arkeber-23 - https://github.com/arkeber-23
+		- DamianNeitor - https://github.com/DamianNeitor
+	
+	sql
+		- multicodecl - https://github.com/multicodecl
+		- Hur0nZ - https://github.com/Hur0nZ
+		- adoocs - https://github.com/adoocs
+		- arkeber-23 - https://github.com/arkeber-23
+		- DamianNeitor - https://github.com/DamianNeitor
+
+------------------------------------------------------------
+
+Excel 23-07-2023
+	Luis - https://github.com/multicodecl
+	Felipe - https://github.com/Hur0nZ
+	Adoo - https://github.com/adoocs
+	Sanito - https://github.com/arkeber-23/
+
+Excel 25-07-2023
+	Luis - https://github.com/multicodecl
+	Felipe - https://github.com/Hur0nZ
+	Adoo - https://github.com/adoocs
+	Sanito - https://github.com/arkeber-23
+	DamianNeitor - https://github.com/DamianNeitor
+
+Excel 02-09-2023
+	Luis - https://github.com/multicodecl
+	Felipe - https://github.com/Hur0nZ
+	Adoo - https://github.com/adoocs
+
+------------------------------------------------------------
+
+Lenguajes:
+	PHP (v7.4.x), CSS, HTML, JavaScript
+
+Base de Datos:
+	MySQL test / utf8_general_ci
+		user: mc_generador_datos
+		pass: 7GA9zwY55z
+
+Sub-Dominio:
+	https://gendata.multicode.cl
+
+Diseño:
+	Bootstrap / usar class con xs / v5.2.3 / https://www.bootstrapcdn.com
+	Iconos / version svg con referencia
+		https://tablericons.com
+		https://iconoir.com
+		https://icons.getbootstrap.com
+
+Idea: 
+
+	Crear un generador de datos de manera dinamica que permita descargar los datos en diferentes tipos de archivos.
+	EJ: json, xml, sql (mysql, sqlserver, oracle), entre otros
+	
+	Como funcionar?
+		Pagina web que permita a traves de formularios manipular variables de datos con rangos, dinamicos entre otros.
+		Ej:
+			id (secuencial, aleatorio(numeros o letras), alfanumericos)
+			fecha ("DD/MM/YYYY h:m:s", numeros)   "24/07/2023 00:13:56" / 1514242627625
+			nombres/apellidos (textos planos) / (json, xml, mysql / nosotros para manipular datos)
+			numeros telefono (codigo pais, largo numeros(aleatorio)) / +56 n/9 -´+569 1234 5678
+			fotos (base_64, url, blob)
+			activo o elimnado, habilitado (rango 0 y 1 aleatoria, default))
+			titulos_nombres (lista json, xml, mysql)
+	
+Requerimientos
+	
+	1.- Debe tener un menu
+		Inicio: debe tener el formulario que permita crear objetos de manera dinamica (filas para los datos)
+		Colaborar: Debe haber un formulario que permita colaborar ingresando datos a la base de datos validada a traves de una api
+		Documentacion: Debe contener una seccion de como usar el sistema
+		Contacto: Debe haber informacion de colaboraracion, entre otros
+	
+	2.- Debe haber una seccion para permitir crear el objeto con una determinada cantidad de filas a configurar
+	
+	3.- Debe haber por cada objeto fila poder seleccionar el tipo de dato que se debe generar Ej: Nombres, Generos, Apellidos, Otros
+		De igual manera debe mostrar en su respectiva fila los detalles a manipular: rangos numeros y fechas, default, otros
+	
+	4.- Debe haber un boton que permita guardar la configuracion actual de los objetos
+	
+	5.- Debe haber un boton modal de exportar que permita la descarga de el archivo con los datos ya previamente configurados
+	
+	6.- Crear exportar / json, xml
+	
+	Otros
+	
+	7.- Debe tener la pagina la opcion de cambiar idiomas
+		Defecto: Español, Inglés
+	
+Asignaciones
+	- multicodecl - https://github.com/multicodecl
+		- Crear subdominio https://gendata.multicode.cl
+		- Crear la base de app web con su menu y idiomas respectivos
+		
+	- Hur0nZ - https://github.com/Hur0nZ
+		- Hacer tablas base de datos con Adoo
+	
+	- adoocs - https://github.com/adoocs
+		- Hacer tablas base de datos con Felipe
+	
+	- arkeber-23 - https://github.com/arkeber-23
+		- ?
+	
+	- DamianNeitor - https://github.com/DamianNeitor
+		- Hacer desarrollo web con Luis
+
+Ruta carpetas
+	public_html
+		
+		
+Tablas
+	Notas:
+		created_at: DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP() / Fecha de creacion del registro
+		updated_at: DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP() DEFAULT CURRENT_TIMESTAMP() / Fecha de actualizacion del registro
+		activo: TINYINT(4) NOT NULL DEFAULT 1
+		
+		Ruta Ejemplo Planilla: https://github.com/multicodecl/admprojectsbt-sql/blob/main/v1/mysql/tablas/comentarios_proyecto.sql
+	-------------------------------------------------------------------------------------
+	Generos
+		id, created_at, updated_at, descripcion, activo
+			- Hombre, Mujer, Indefinido
+	Nombres (asociada a genero)
+		id, created_at, updated_at, descripcion, fk_genero, activo
+	Apellidos
+		id, created_at, updated_at, descripcion, activo
+	Profesiones
+		id, created_at, updated_at, descripcion, activo
+			- Analista Programador, Ingeniero informático, Otros
+	Idiomas
+		id, created_at, updated_at, descripcion, activo
+			- Español, Inglés, Chino mandarín, Otros
+	Paises / Codigo Pais / Tipo Monedas (CLP, EURO, USD, OTROS) / Continentes
+		id, created_at, updated_at, descripcion, codigo_telefonico, tipo_modena, nombre_continente, activo
+			- Argentina, Chile, Peru, Otros / EJ: Chile, +56 / CLP, Sudamérica
+	Religiones
+		id, created_at, updated_at, descripcion, activo
+	Bancos
+		id, created_at, updated_at, descripcion, activo
+	Estado Empleados
+		id, created_at, updated_at, descripcion, activo
+	Tipo de Usuarios
+		id, created_at, updated_at, descripcion, activo
+	-------------------------------------------------------------------------------------
+	Animales
+	Cursos
+	Marcas
+	
+	Comidas
+	Colores
+	Nombre Empresas
+	
+	Plantas
+	Automoviles
+	Aviones
+	Tipo Documento
+	Tipo Contrato
+	Tipo Sociedad
+	Libros
+	Peliculas
+	Series
+	Artistas
+	
+
+----------------------------------------------------------------------
+Reuniones 02-09-2023
+	Adoo
+		Pagina contacto
+		- crear mapa / santiago de chile
+		- lista contacto
+			- telefono, link de discord, correo multicode
+			- maps (Santiago de Chile) o crear algo aleatorio
+		- con bootstrap 5.2.3 idiomas respectivos / ya integrado
+	Felipe
+		- colaboracion api
+			- diseño
+		- tabla animales
+			buscar y hacer su insert respectivos
+	Luis
+		- drowdonlist idiomas / cambio nombre, cambio All rights reserved. 2 idiomas
+		- hacer documentos asociados
+		- integrar colaboracion paypal donacion
+		- agrego session menu / dashboard
+		- integrar theme oscuro y blanco
