@@ -7,18 +7,32 @@ Proyecto sql para generador de datos.
 _Scripts SQL del sistema a desarrollar en su versión 1 y posteriores mejoras_
 
 ## Tablas
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-* 
+* gd_animales.sql
+* gd_apellidos.sql
+* gd_artistas.sql
+* gd_automoviles.sql
+* gd_aviones.sql
+* gd_bancos.sql
+* gd_colores.sql
+* gd_comidas.sql
+* gd_cursos.sql
+* gd_estado_empleados.sql
+* gd_generos.sql
+* gd_idiomas.sql
+* gd_libros.sql
+* gd_marcas.sql
+* gd_nombre_empresas.sql
+* gd_nombres.sql
+* gd_paises.sql
+* gd_peliculas.sql
+* gd_plantas.sql
+* gd_profesiones.sql
+* gd_religiones.sql
+* gd_series.sql
+* gd_tipo_usuarios.sql
+
+* gd_sistema_tipo_usuarios.sql
+* gd_sistema_usuarios.sql
 
 ## Colaboración
 * **Contacto, Email** : contacto@multicode.cl

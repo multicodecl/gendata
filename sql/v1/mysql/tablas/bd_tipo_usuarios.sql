@@ -6,7 +6,7 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/adoocs
--- 01-09-2023 https://github.com/multicodecl
+-- 01-11-2024 https://github.com/multicodecl
 --
 -- id_tip_usu, Guarda el id del tipo de usuario
 -- created_at, Guarda la fecha de creación del registro

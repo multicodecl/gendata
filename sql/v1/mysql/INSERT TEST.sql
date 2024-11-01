@@ -12,7 +12,7 @@
 --
 -- Insert tabla animales
 --
-INSERT INTO `animales` (`descripcion`) VALUES
+INSERT INTO `gd_animales` (`descripcion`) VALUES
     ('Perro'),
     ('Gato'),
     ('Conejo'),
@@ -28,7 +28,7 @@ INSERT INTO `animales` (`descripcion`) VALUES
 -- Insert tabla apellidos
 --
 
-INSERT INTO `apellidos` (`descripcion`) VALUES
+INSERT INTO `gd_apellidos` (`descripcion`) VALUES
     ('García'),
     ('Rodríguez'),
     ('Martínez'),
@@ -43,7 +43,7 @@ INSERT INTO `apellidos` (`descripcion`) VALUES
 --
 -- Insert tabla artistas
 --
-INSERT INTO `artistas` (`nombre`, `pais`, `genero`, `fecha_nacimiento`, `discografia`, `albunes`) VALUES
+INSERT INTO `gd_artistas` (`nombre`, `pais`, `genero`, `fecha_nacimiento`, `discografia`, `albunes`) VALUES
     ('Michael Jackson', 'Estados Unidos', 'Pop', '1958-08-29', 'Thriller, Bad, Dangerous', 'Off the Wall, Thriller, Bad'),
     ('Beyoncé', 'Estados Unidos', 'R&B', '1981-09-04', 'Dangerously in Love, Lemonade, Beyoncé', 'Dangerously in Love, I Am... Sasha Fierce, Lemonade'),
     ('Luis Fonsi', 'Puerto Rico', 'Pop', '1978-04-15', 'Comenzaré, Abrazar la Vida, Tierra Firme', 'Comenzaré, Palabras del Silencio, 8'),
@@ -58,7 +58,7 @@ INSERT INTO `artistas` (`nombre`, `pais`, `genero`, `fecha_nacimiento`, `discogr
 --
 -- Insert tabla automoviles
 --
-INSERT INTO `automoviles` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
+INSERT INTO `gd_automoviles` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
     ('Toyota', 'Corolla', 'Sedán compacto', '2022-01-01'),
     ('Honda', 'Civic', 'Sedán compacto', '2021-01-01'),
     ('Ford', 'Mustang', 'Coupé deportivo', '2023-01-01'),
@@ -73,7 +73,7 @@ INSERT INTO `automoviles` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
 --
 -- Insert tabla aviones
 --
-INSERT INTO `aviones` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
+INSERT INTO `gd_aviones` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
     ('Boeing', '747', 'Avión de pasajeros de gran capacidad', '2005-01-01'),
     ('Airbus', 'A320', 'Avión de pasajeros de corto alcance', '2019-01-01'),
     ('Embraer', 'E175', 'Avión regional de pasajeros', '2022-01-01'),
@@ -88,7 +88,7 @@ INSERT INTO `aviones` (`marca`, `modelo`, `descripcion`, `anio`) VALUES
 --
 -- Insert tabla bancos
 --
-INSERT INTO `bancos` (`descripcion`) VALUES
+INSERT INTO `gd_bancos` (`descripcion`) VALUES
     ('Banco Santander'),
     ('BBVA'),
     ('HSBC'),
@@ -119,7 +119,7 @@ INSERT INTO `bancos` (`descripcion`) VALUES
 --
 -- Insert tablas colores
 --
-INSERT INTO `colores` (`descripcion`) VALUES
+INSERT INTO `gd_colores` (`descripcion`) VALUES
     ('Rojo'),
     ('Azul'),
     ('Verde'),
@@ -134,7 +134,7 @@ INSERT INTO `colores` (`descripcion`) VALUES
 --
 -- Insert tablas comidas
 --
-INSERT INTO `comidas` (`nombre`, `descripcion`, `pais`) VALUES
+INSERT INTO `gd_comidas` (`nombre`, `descripcion`, `pais`) VALUES
     ('Paella', 'Plato de arroz con azafrán y diversos ingredientes como mariscos, pollo y conejo', 'España'),
     ('Sushi', 'Rollos de arroz, pescado y vegetales envueltos en alga nori', 'Japón'),
     ('Tacos', 'Tortillas rellenas de carne, queso, verduras y salsas', 'México'),
@@ -149,7 +149,7 @@ INSERT INTO `comidas` (`nombre`, `descripcion`, `pais`) VALUES
 --
 -- Insert tablas cursos
 --
-INSERT INTO `cursos` (`descripcion`) VALUES
+INSERT INTO `gd_cursos` (`descripcion`) VALUES
     ('1er grado'),
     ('2do grado'),
     ('3er grado'),
@@ -162,14 +162,14 @@ INSERT INTO `cursos` (`descripcion`) VALUES
 --
 -- Nivel educativo: Media
 --
-INSERT INTO `cursos` (`descripcion`) VALUES
+INSERT INTO `gd_cursos` (`descripcion`) VALUES
     ('1er año'),
     ('2do año'),
     ('3er año'),
     ('4to año');
 
 -- Nivel educativo: Universidad
-INSERT INTO `cursos` (`descripcion`) VALUES
+INSERT INTO `gd_cursos` (`descripcion`) VALUES
     ('Primer año'),
     ('Segundo año'),
     ('Tercer año'),
@@ -179,7 +179,7 @@ INSERT INTO `cursos` (`descripcion`) VALUES
 --
 -- Insert tabla estado empleados
 --
-INSERT INTO `estado_empleados` (`id_emp`, `descripcion`, `activo`) VALUES
+INSERT INTO `gd_estado_empleados` (`id_emp`, `descripcion`, `activo`) VALUES
 (1, 'Activo', 1),
 (2, 'Incapacidad', 1),
 (3, 'Maternidad', 1),
@@ -192,7 +192,7 @@ INSERT INTO `estado_empleados` (`id_emp`, `descripcion`, `activo`) VALUES
 --
 -- Insert tabla generos
 --
-INSERT INTO `generos` (`id_gen`, `descripcion`, `activo`) VALUES
+INSERT INTO `gd_generos` (`id_gen`, `descripcion`, `activo`) VALUES
 (1, 'Masculino', 1),
 (2, 'Femenino', 1),
 (3, 'Indefinido', 1);
@@ -200,7 +200,7 @@ INSERT INTO `generos` (`id_gen`, `descripcion`, `activo`) VALUES
 --
 -- Insert tabla idiomas
 --
-INSERT INTO `idiomas` (`descripcion`) VALUES
+INSERT INTO `gd_idiomas` (`descripcion`) VALUES
     ('Español'),
     ('Inglés'),
     ('Francés'),
@@ -260,7 +260,7 @@ INSERT INTO `idiomas` (`descripcion`) VALUES
 --
 -- Insert tabla libros
 --
-INSERT INTO `libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacion`) VALUES
+INSERT INTO `gd_libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacion`) VALUES
     ('Orgullo y prejuicio', 'Jane Austen', 'Un clásico sobre amor y sociedad en la Inglaterra del siglo XIX.', 'Novela romántica', '1813-01-28'),
     ('Los juegos del hambre', 'Suzanne Collins', 'Una joven lucha por sobrevivir en una competencia mortal.', 'Distopía', '2008-09-14'),
     ('Don Quijote de la Mancha', 'Miguel de Cervantes', 'Las aventuras cómicas de un caballero y su fiel escudero.', 'Novela de caballería', '1605-01-16'),
@@ -285,7 +285,7 @@ INSERT INTO `libros` (`titulo`, `autor`, `descripcion`, `genero`, `fecha_creacio
 --
 -- Insert tabla marcas
 --
-INSERT INTO `marcas` (`descripcion`) 
+INSERT INTO `gd_marcas` (`descripcion`) 
 	VALUES 
 		('Nike'),
 		('Adidas'),
@@ -301,7 +301,7 @@ INSERT INTO `marcas` (`descripcion`)
 --
 -- Insert tabla nombres
 --
-INSERT INTO `nombres` (`descripcion`, `fk_id_gen`) 
+INSERT INTO `gd_nombres` (`descripcion`, `fk_id_gen`) 
 	VALUES
 	('Juan', 1),
 	('Pablo', 1),
@@ -317,7 +317,7 @@ INSERT INTO `nombres` (`descripcion`, `fk_id_gen`)
 --
 -- Insert tabla nombre empresas
 --
-INSERT INTO `nombre_empresas` (`descripcion`) 
+INSERT INTO `gd_nombre_empresas` (`descripcion`) 
 	VALUES 
 		('Nike'),
 		('Adidas'),
@@ -337,7 +337,7 @@ INSERT INTO `nombre_empresas` (`descripcion`)
 -- 		SELECT nombre, prefijo_telefonico, moneda_nacional, continente FROM pais
 --
 
-INSERT INTO `paises` (`id_pai`, `created_at`, `updated_at`, `descripcion`, `codigo_telefonico`, `tipo_moneda`, `nombre_continente`, `activo`) VALUES
+INSERT INTO `gd_paises` (`id_pai`, `created_at`, `updated_at`, `descripcion`, `codigo_telefonico`, `tipo_moneda`, `nombre_continente`, `activo`) VALUES
 (1, '2023-08-21 23:03:37', '2023-08-21 23:03:37', 'Aruba', '+297', '', 'Norteamérica', 1),
 (2, '2023-08-21 23:03:37', '2023-08-21 23:03:37', 'Afganistán', '+93', '', 'Asia', 1),
 (3, '2023-08-21 23:03:37', '2023-08-21 23:03:37', 'Angola', '+244', '', 'África', 1),
@@ -581,7 +581,7 @@ INSERT INTO `paises` (`id_pai`, `created_at`, `updated_at`, `descripcion`, `codi
 --
 -- Insert tabla peliculas
 --
-INSERT INTO `peliculas` (`id_pel`, `titulo`, `productor`, `actores`, `descripcion`, `categoria`, `activo`) VALUES
+INSERT INTO `gd_peliculas` (`id_pel`, `titulo`, `productor`, `actores`, `descripcion`, `categoria`, `activo`) VALUES
 (1, 'Hasta el límite del honor', 'Mel Gibson', 'Andrew Garfield', 'Inicio de la Gran Guerra Patria. El teniente Adi Sharipov, junto con su pelotón, cubren la retirada del cuartel general del regimiento y permanecen rodeados detrás de las líneas enemigas. El enemigo empuja al escuadrón al pantano. El miedo a lo desconocido, el desaliento y la duda persiguen a los combatientes hasta que se dan cuenta de que la espera y la inacción destruirán al escuadrón más rápido que las balas enemigas.', 'Acción', 1),
 (2, 'Aguila y Jaguar: Los Guerreros Legendarios', 'Mike R. Ortiz', 'Kooltoon Entertainment, Jaime Rionda Marin-Fouche', 'En un futuro postapocalíptico en el que el agua casi ha desaparecido, dos jóvenes sobrevivientes viajan en el tiempo para encontrar el mítico poder del dios prehispánico del agua, y así poder crear el vital recurso. Sin embargo, cuando llegan al presente descubren que el poder está en manos de un empresario sin escrúpulos que sabe todo sobre los mitos prehispánicos y siempre había querido monopolizar el agua. La hermandad Aztaya, un grupo de héroes sucesores de los legendarios guerreros Aztecas y Mayas, comenzará la aventura para evitar que el agua sea controlada y ayudar a los viajeros a cambiar su triste futuro; uniéndose para luchar contra el poderoso enemigo y sus oscuros aliados. Para ganar, los héroes deberán despertar a los más grandes guerreros de la mitología Azteca y Maya: el Águila y el Jaguar.', 'Animación', 1),
 (3, 'Next Exit', 'Indefinido', 'Katie Parker, Rahul Kohli, Rose McIver, Karen Gillan, Tongayi Chirisa y Diva Zappa', 'En un mundo donde los fantasmas son noticias reales y de primera plana, un nuevo y controvertido procedimiento médico permite a las personas suicidarse pacíficamente. En medio de este gran avance, dos extraños viajan juntos a través del país para terminar con sus vidas, solo para encontrar inesperadamente lo que se han estado perdiendo en el camino.', 'Comedia', 1),
@@ -596,7 +596,7 @@ INSERT INTO `peliculas` (`id_pel`, `titulo`, `productor`, `actores`, `descripcio
 --
 -- Insert tabla plantas
 --
-INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`) 
+INSERT INTO `gd_plantas` (`nombre`, `descripcion`, `tipo`) 
 	VALUES 
 	('Rosa', 'Una planta conocida por sus hermosas flores y fragancia.', 'Flor'),
 	('Pino', 'Un árbol perenne con agujas largas y conos.', 'Árbol'),
@@ -612,7 +612,7 @@ INSERT INTO `plantas` (`nombre`, `descripcion`, `tipo`)
 --
 -- Insert tabla profesiones
 --
-INSERT INTO `profesiones` (`id_pro`, `descripcion`, `activo`) VALUES
+INSERT INTO `gd_profesiones` (`id_pro`, `descripcion`, `activo`) VALUES
 (1, 'Abogado (a)', 1),
 (2, 'Analista Funcional', 1),
 (3, 'Analista Marketing', 1),
@@ -646,7 +646,7 @@ INSERT INTO `profesiones` (`id_pro`, `descripcion`, `activo`) VALUES
 -- Insert tabla religiones
 --
 
-INSERT INTO `religiones` (`id_rel`, `descripcion`, `activo`) VALUES
+INSERT INTO `gd_religiones` (`id_rel`, `descripcion`, `activo`) VALUES
 (1, 'Católico', 1),
 (2, 'Protestante', 1),
 (3, 'Ortodoxo', 1),
@@ -662,7 +662,7 @@ INSERT INTO `religiones` (`id_rel`, `descripcion`, `activo`) VALUES
 --
 -- Insert tabla series
 --
-INSERT INTO `series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
+INSERT INTO `gd_series` (`titulo`, `productor`, `actores`, `descripcion`, `categoria`, `fecha_publicacion`) 
 VALUES 
 	('Stranger Things', 'Duffer Brothers', 'Millie Bobby Brown, Winona Ryder', 'Un grupo de amigos se enfrenta a eventos paranormales en los años 80.', 'Ciencia ficción', '2016-07-15'),
 	('Game of Thrones', 'David Benioff, D. B. Weiss', 'Emilia Clarke, Kit Harington', 'Intrigas y batallas por el Trono de Hierro en un mundo fantástico.', 'Fantasía', '2011-04-17'),
@@ -679,7 +679,7 @@ VALUES
 -- Insert tabla tipo usuarios
 --
 
-INSERT INTO `tipo_usuarios` (`descripcion`) VALUES 
+INSERT INTO `gd_tipo_usuarios` (`descripcion`) VALUES 
 	('Super Administrador'),
 	('Administrador'),
 	('Cliente'),
@@ -690,7 +690,7 @@ INSERT INTO `tipo_usuarios` (`descripcion`) VALUES
 -- Insert tabla / sistema tipo usuarios
 --
 
-INSERT INTO `sistema_tipo_usuarios` (`descripcion`) VALUES 
+INSERT INTO `gd_sistema_tipo_usuarios` (`descripcion`) VALUES 
 	('Super Administrador'),
 	('Colaborador');
 
@@ -698,5 +698,5 @@ INSERT INTO `sistema_tipo_usuarios` (`descripcion`) VALUES
 -- Insert tabla / sistema usuarios
 --
 
-INSERT INTO `sistema_usuarios` (`nombre`, `email`, `contrasenia`, `telefono`, `habilitado`, `id_tip_usu`, `activo`) VALUES 
+INSERT INTO `gd_sistema_usuarios` (`nombre`, `email`, `contrasenia`, `telefono`, `habilitado`, `id_tip_usu`, `activo`) VALUES 
 	('Administrador Multicode', 'test@multicode.cl', '81dc9bdb52d04dc20036dbd8313ed055', '+569 0123 4567', 1, 1, 1);

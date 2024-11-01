@@ -6,7 +6,7 @@
 --
 -- Actualizado por: 
 -- 12-08-2023 https://github.com/Hur0nZ
--- 01-09-2023 https://github.com/multicodecl
+-- 01-11-2024 https://github.com/multicodecl
 --
 -- id_cur, Guarda el id del curso
 -- created_at, Guarda la fecha de creación del registro
