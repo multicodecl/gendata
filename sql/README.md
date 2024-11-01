@@ -1,10 +1,8 @@
-# mc_generados_datos-php
-
-Generador de datos de prueba.
+# gendata-sql
 
 ## Información general
 
-Proyecto web php para generador de datos.
+Proyecto sql para generador de datos.
 
 _Scripts SQL del sistema a desarrollar en su versión 1 y posteriores mejoras_
 

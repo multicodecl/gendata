@@ -22,26 +22,6 @@ Participantes
 
 ------------------------------------------------------------
 
-Excel 23-07-2023
-	Luis - https://github.com/multicodecl
-	Felipe - https://github.com/Hur0nZ
-	Adoo - https://github.com/adoocs
-	Sanito - https://github.com/arkeber-23/
-
-Excel 25-07-2023
-	Luis - https://github.com/multicodecl
-	Felipe - https://github.com/Hur0nZ
-	Adoo - https://github.com/adoocs
-	Sanito - https://github.com/arkeber-23
-	DamianNeitor - https://github.com/DamianNeitor
-
-Excel 02-09-2023
-	Luis - https://github.com/multicodecl
-	Felipe - https://github.com/Hur0nZ
-	Adoo - https://github.com/adoocs
-
-------------------------------------------------------------
-
 Lenguajes:
 	PHP (v7.4.x), CSS, HTML, JavaScript
 
@@ -101,6 +81,7 @@ Requerimientos
 		Defecto: Español, Inglés
 	
 Asignaciones
+
 	- multicodecl - https://github.com/multicodecl
 		- Crear subdominio https://gendata.multicode.cl
 		- Crear la base de app web con su menu y idiomas respectivos
@@ -119,7 +100,6 @@ Asignaciones
 
 Ruta carpetas
 	public_html
-		
 		
 Tablas
 	Notas:
@@ -173,22 +153,21 @@ Tablas
 	Series
 	Artistas
 	
-
 ----------------------------------------------------------------------
 Reuniones 02-09-2023
-	Adoo
+	adoocs
 		Pagina contacto
 		- crear mapa / santiago de chile
 		- lista contacto
 			- telefono, link de discord, correo multicode
 			- maps (Santiago de Chile) o crear algo aleatorio
 		- con bootstrap 5.2.3 idiomas respectivos / ya integrado
-	Felipe
+	Hur0nZ
 		- colaboracion api
 			- diseño
 		- tabla animales
 			buscar y hacer su insert respectivos
-	Luis
+	multicodecl
 		- drowdonlist idiomas / cambio nombre, cambio All rights reserved. 2 idiomas
 		- hacer documentos asociados
 		- integrar colaboracion paypal donacion
