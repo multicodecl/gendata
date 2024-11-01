@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `bancos`
+CREATE TABLE `gd_bancos`
 (
     `id_ban` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

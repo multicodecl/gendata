@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `generos`
+CREATE TABLE `gd_generos`
 (
     `id_gen` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -18,7 +18,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `sistema_tipo_usuarios`
+CREATE TABLE `gd_sistema_tipo_usuarios`
 (
     `id_sis_tip_usu` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

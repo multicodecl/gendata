@@ -22,7 +22,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `paises`
+CREATE TABLE `gd_paises`
 (
     `id_pai` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

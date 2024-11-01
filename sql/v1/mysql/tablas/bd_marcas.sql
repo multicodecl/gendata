@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `marcas`
+CREATE TABLE `gd_marcas`
 (
     `id_mar` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

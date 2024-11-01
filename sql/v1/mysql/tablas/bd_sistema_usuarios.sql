@@ -23,7 +23,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `sistema_usuarios`
+CREATE TABLE `gd_sistema_usuarios`
 (
     `id_usu` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -43,4 +43,4 @@ CREATE TABLE `sistema_usuarios`
     `activo` TINYINT(4) NOT NULL DEFAULT 1
 );
 
-ALTER TABLE `sistema_usuarios` ADD CONSTRAINT FK_SISTEMA_USUARIOS_SISTEMA_TIPO_USUARIOS FOREIGN KEY ( `id_tip_usu` ) REFERENCES `sistema_tipo_usuarios` ( `id_sis_tip_usu`  );
+ALTER TABLE `gd_sistema_usuarios` ADD CONSTRAINT FK_SISTEMA_USUARIOS_SISTEMA_TIPO_USUARIOS FOREIGN KEY ( `id_tip_usu` ) REFERENCES `gd_sistema_tipo_usuarios` ( `id_sis_tip_usu`  );

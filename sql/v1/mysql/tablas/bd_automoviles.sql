@@ -22,7 +22,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `automoviles`
+CREATE TABLE `gd_automoviles`
 (
     `id_aut` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

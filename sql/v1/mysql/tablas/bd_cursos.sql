@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `cursos`
+CREATE TABLE `gd_cursos`
 (
     `id_cur` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

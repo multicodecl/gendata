@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `colores`
+CREATE TABLE `gd_colores`
 (
     `id_col` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

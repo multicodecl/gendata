@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `idiomas`
+CREATE TABLE `gd_idiomas`
 (
     `id_idi` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

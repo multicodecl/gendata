@@ -21,7 +21,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `comidas`
+CREATE TABLE `gd_comidas`
 (
     `id_com` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

@@ -6,6 +6,20 @@ Proyecto sql para generador de datos.
 
 _Scripts SQL del sistema a desarrollar en su versión 1 y posteriores mejoras_
 
+## Tablas
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
 ## Colaboración
 * **Contacto, Email** : contacto@multicode.cl
 * **Contacto, Teléfono** : + 569 6426 3862 - [Grupos de WhatsApp](https://chat.whatsapp.com/EXveAd4eERKF1aY2zzUvLr)

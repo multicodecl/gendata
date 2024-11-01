@@ -19,7 +19,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `nombre_empresas`
+CREATE TABLE `gd_nombre_empresas`
 (
     `id_emp` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

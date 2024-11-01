@@ -22,7 +22,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `aviones`
+CREATE TABLE `gd_aviones`
 (
     `id_avi` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,

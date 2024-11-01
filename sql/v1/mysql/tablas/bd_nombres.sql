@@ -20,7 +20,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `nombres`
+CREATE TABLE `gd_nombres`
 (
     `id_nom` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -31,5 +31,5 @@ CREATE TABLE `nombres`
     
     `activo` TINYINT(4) NOT NULL DEFAULT 1,
 	
-	FOREIGN KEY (`fk_id_gen`) REFERENCES `generos` (`id_gen`)
+	FOREIGN KEY (`fk_id_gen`) REFERENCES `gd_generos` (`id_gen`)
 );

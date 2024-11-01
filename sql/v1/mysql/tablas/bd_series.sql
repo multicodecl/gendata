@@ -24,7 +24,7 @@
 -- Defecto: Ninguno
 --
 
-CREATE TABLE `series`
+CREATE TABLE `gd_series`
 (
     `id_ser` BIGINT(20) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	`created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
